@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Clínica Dr. Alvanez",
+  title: "Alvanez Wellness Center",
   description: "Sistema de Gestión Médica",
 };
 

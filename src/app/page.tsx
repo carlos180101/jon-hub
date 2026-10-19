@@ -139,7 +139,7 @@ export default function ClinicaApp() {
   if (vista === "landing") {
     return (
       <div className="min-h-screen bg-slate-50 text-slate-900">
-        <header className="bg-white shadow-sm p-4 flex justify-between items-center"><div className="flex items-center text-xl font-black"><Activity className="text-blue-600 mr-2"/> Dr. Alvanez</div><button onClick={() => setVista("login")} className="text-sm font-bold text-blue-600 flex items-center"><ShieldCheck className="mr-1" size={18}/> Acceso Médico</button></header>
+        <header className="bg-white shadow-sm p-4 flex justify-between items-center"><div className="flex items-center text-xl font-black"><Activity className="text-blue-600 mr-2"/> Alvanez Wellness Center</div><button onClick={() => setVista("login")} className="text-sm font-bold text-blue-600 flex items-center"><ShieldCheck className="mr-1" size={18}/> Acceso Médico</button></header>
         <section className="bg-blue-900 text-white py-20 px-6">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div><h1 className="text-4xl md:text-6xl font-black leading-tight mb-6">Tu salud en las mejores manos.</h1><p className="text-lg text-blue-200 mb-8">Atención médica integral, diagnósticos precisos y tratamientos personalizados.</p><button onClick={() => document.getElementById("agendar")?.scrollIntoView()} className="bg-emerald-500 text-slate-900 px-8 py-4 rounded-full font-black">Agendar Cita Ahora</button></div>
