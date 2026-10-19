@@ -119,7 +119,7 @@ export default function ClinicaApp() {
         <style>{`@media print { .no-print { display: none !important; } }`}</style>
         <div className="max-w-3xl mx-auto border-2 border-slate-800 p-10 rounded-2xl relative bg-white">
           <div className="flex justify-between border-b-4 border-blue-900 pb-6 mb-6">
-            <div className="flex items-center"><Activity className="text-blue-900 mr-4" size={50} /><div><h1 className="text-4xl font-black text-blue-900">Dr. Carlos Alvanez</h1></div></div>
+            <div className="flex items-center"><Activity className="text-blue-900 mr-4" size={50} /><div><h1 className="text-4xl font-black text-blue-900">Alvanez Wellness Center</h1></div></div>
             <div className="text-right"><p className="font-bold text-slate-500">FECHA</p><p className="text-xl font-bold">{new Date(recetaActiva.fecha).toLocaleDateString()}</p></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-50 p-4 mb-8">
@@ -139,7 +139,7 @@ export default function ClinicaApp() {
   if (vista === "landing") {
     return (
       <div className="min-h-screen bg-slate-50 text-slate-900">
-        <header className="bg-white shadow-sm p-4 flex justify-between items-center"><div className="flex items-center text-xl font-black"><Activity className="text-blue-600 mr-2"/> Dr. Alvanez</div><button onClick={() => setVista("login")} className="text-sm font-bold text-blue-600 flex items-center"><ShieldCheck className="mr-1" size={18}/> Acceso Médico</button></header>
+        <header className="bg-white shadow-sm p-4 flex justify-between items-center"><div className="flex items-center text-xl font-black"><Activity className="text-blue-600 mr-2"/> Alvanez Wellness Center</div><button onClick={() => setVista("login")} className="text-sm font-bold text-blue-600 flex items-center"><ShieldCheck className="mr-1" size={18}/> Acceso Médico</button></header>
         <section className="bg-blue-900 text-white py-20 px-6">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div><h1 className="text-4xl md:text-6xl font-black leading-tight mb-6">Tu salud en las mejores manos.</h1><p className="text-lg text-blue-200 mb-8">Atención médica integral, diagnósticos precisos y tratamientos personalizados.</p><button onClick={() => document.getElementById("agendar")?.scrollIntoView()} className="bg-emerald-500 text-slate-900 px-8 py-4 rounded-full font-black">Agendar Cita Ahora</button></div>
@@ -172,7 +172,7 @@ export default function ClinicaApp() {
   return (
     <div className={`flex h-screen ${bgMain}`}>
       <div className={`w-64 p-4 flex flex-col gap-4 border-r ${theme==="dark"?"border-slate-800":"border-slate-200"}`}>
-        <div className="text-xl font-black flex items-center mb-8"><Activity className="mr-2 text-blue-500"/> Dr. Alvanez</div>
+        <div className="text-xl font-black flex items-center mb-8"><Activity className="mr-2 text-blue-500"/> Alvanez Wellness Center</div>
         <button onClick={() => setMenu("dashboard")} className={`p-3 rounded-xl font-bold flex ${menu==="dashboard"?"bg-blue-600 text-white":"opacity-50"}`}><Activity className="mr-2"/> Dashboard</button>
         <button onClick={() => setMenu("agenda")} className={`p-3 rounded-xl font-bold flex ${menu==="agenda"?"bg-blue-600 text-white":"opacity-50"}`}><Calendar className="mr-2"/> Agenda</button>
         <button onClick={() => setMenu("pacientes")} className={`p-3 rounded-xl font-bold flex ${menu==="pacientes"?"bg-blue-600 text-white":"opacity-50"}`}><Users className="mr-2"/> Pacientes</button>
